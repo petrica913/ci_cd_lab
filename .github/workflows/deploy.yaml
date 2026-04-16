@@ -22,8 +22,10 @@ jobs:
 
       - name: Run tests
         run: go test ./...
+
   compile:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
