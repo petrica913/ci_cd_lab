@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: webserver
-          image: ghcr.io/petrica913/ci_cd_lab:latest
+          image: ghcr.io/petrica913/ci_cd_lab:v1
           ports:
             - containerPort: 8080
           imagePullPolicy: Always
